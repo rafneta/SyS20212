@@ -1,0 +1,62 @@
+.distill-site-nav {
+    color: rgba(158,162,162,1);
+    background-color: rgba(108,29,69,0.95);
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+h1 {
+    color: rgba(108,29,69,0.9);
+}
+
+#pregunta {
+      margin-top: 10px;
+    margin-bottom: 10px;
+   background-color: #e2e8e9;
+   /*color: rgba(255,255,255,0.9);
+   background-color: #5c7884;*/
+   padding: 10px 10px 10px 10px;
+   text-align: justify;
+}
+
+#inciso {
+   margin-top: 10px;
+  background-color: #f1f3f4;
+   /*color: rgba(255,255,255,0.9);
+   background-color: #87a0ab;*/
+   padding: 10px 10px 10px 10px;
+   text-align: justify;
+   margin-bottom: 10px;
+}
+
+#justificar{
+   margin-top: 10px;
+    margin-bottom: 10px;
+   text-align: justify;
+}
+
+#colpre {
+  color: #5c7884;
+}
+
+#colin {
+  color: #87a0ab;
+}
+
+#guinda{
+   color: rgba(108,29,69,0.9);
+}
+
+.guinda{
+   color: rgba(108,29,69,0.9);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(158,162,162,0.1);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(255,255,255);
+}
+
+
