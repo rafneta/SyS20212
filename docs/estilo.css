@@ -62,7 +62,7 @@ tbody tr:nth-child(even) {
 
 
 d-article a:link {
- color: rgba(108,29,69,0.5);
+ color: rgba(108,29,69,0.5) !important;
 }
 
 d-article  li a:link {
@@ -70,5 +70,6 @@ d-article  li a:link {
 }
 
 d-article-with-toc a:link {
- color: rgba(108,29,69,0.5);
+ color: rgba(108,29,69,0.5) !important;
 }
+
