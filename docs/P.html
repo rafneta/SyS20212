@@ -2108,6 +2108,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h3>Contents</h3>
 <ul>
 <li><a href="#p01-introducción-a-matlab">P01: Introducción a MATLAB</a></li>
+<li><a href="#p02-señales-en-tiempo-continuo">P02: Señales en tiempo continuo</a></li>
+<li><a href="#p03-uso-de-latex-convolución">P03: Uso de LaTeX, convolución</a></li>
+<li><a href="#p04-convolución-y-correlación">P04: Convolución y correlación</a></li>
+<li><a href="#p05-series-de-fourier-en-tiempo-continuo">P05: Series de Fourier en tiempo continuo</a></li>
+<li><a href="#p06-sistemas-diferenciales">P06: Sistemas diferenciales</a></li>
 </ul>
 </nav>
 </div>
@@ -2132,23 +2137,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 <tr class="even">
 <td style="text-align: left;">P02: Señales continuas</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">lunes</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">P03: Uso de LaTeX, convolución</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">lunes</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">P04: Convolución y correlación</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">lunes</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">P05: Series de Fourier</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">lunes</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">P06: Sistemas diferenciales</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">lunes</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">P07: Respuesta en frecuencia, simulación en MATLAB</td>
@@ -2174,7 +2179,86 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <pre><code>P01_Rafael_Martinez_M_2TV1.pdf</code></pre>
 <p>Omitir acentos y caracteres especiales en el nombre del archivo.</p>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h1 id="p02-señales-en-tiempo-continuo">P02: Señales en tiempo continuo</h1>
+<div id="justificar">
+<p>Para es ta práctica tienes que generar un cuenta en <a href="https://github.com/">GitHub</a>. <em>GitHub es una plataforma de desarrollo inspirada en tu forma de trabajar. Desde el código abierto hasta los negocios, puedes alojar y revisar códigos, administrar proyectos y crear software.</em> Para manejar GitHub desde el terminal puedes consultar la siguiente <a href="https://github.com/Hispano/Guia-sobre-Git-Github-y-Metodologia-de-Desarrollo-de-Software-usando-Git-y-Github">guía</a>, también hay aplicaciones gráficas (hay varias opciones para esto, aquí esta el <a href="https://desktop.github.com/">enlace</a> de una de ellas) si así lo prefieres, disponibles para macOS, Windows y Linux. Nuestro objetivo es alojar <a href="https://pages.github.com/">páginas web</a> de las prácticas. En el siguiente <a href="https://guides.github.com/">enlace</a> se encuentran las guías de los diferentes servicios de GitHub.</p>
+<p>Para continuar con el desarrollo de la práctica, es necesario que en este punto ya tengas tu cuenta en GitHub, y tengas claro como cargar archivo en tu repositorio de tal manera que sea vea como página web una vez que entres a la dirección correspondiente. Se muestran los enlaces a dos archivo</p>
+<p>1. <a href="../SyS20211/Practicas_SyS_2021_1/P02_SyS_2021_1/P02_SyS_2021_1.html">Documento de la práctica</a>. Documento en formato HTML, que contiene la descripción de la práctica</p>
+<p>2. <a href="https://correoipn-my.sharepoint.com/:v:/g/personal/ramartinezr_ipn_mx/ETsNulMaCM5GieHC0SgQNiUBejefwNInLbaYM_BqfZJv4Q?e=oC8LcU">Video de la práctica</a>. Describe el contenido de la práctica.</p>
+<p><strong>Entrega:</strong> Se genera una página web con MATLAB (publish) esta página web se carga al repositorio adecuado de GitHub. Se carga en classroom el enlace de la página (en la sección correspondiente), con la nomenclatura.</p>
+<pre><code>http://usuario.github.io/.../SySPrac#NombreApellido.html</code></pre>
+si hay dudas al respecto puede preguntar en clase.
+</div>
+<h1 id="p03-uso-de-latex-convolución">P03: Uso de LaTeX, convolución</h1>
+<div id="justificar">
+<p>Usar LaTeX (el cual es uno de los objetivos de esta práctica) es relativamente fácil, en el sentido que basta con entender qué es y cómo funciona de manera general, una vez que lo anterior se tiene claro, basta con buscar en la comunidad (código en internet que alguien amablemente comparta) el problema en especifico que se quiera resolver. Cabe aclarar que estos pasos (1. Entender de manera general 2. Buscar en especifico lo que se necesita) no son exclusivos de esta práctica, se pueden aplicar en muchos otros casos (programación, matemáticas, electrónica, etc.), en la búsqueda de información es necesario tener cuidado de no cometer <a href="http://www3.uah.es/bibliotecaformacion/BECO/plagio/1_qu_es_el_plagio.html">plagio</a>.</p>
+<p>LaTeX es una herramienta para producir documentos en diferentes formatos (pdf, ps, dvi) con alta calidad tipográfica, aquí algunos ejemplos <a href="http://www.texample.net/tikz/examples/area/mathematics/">enlace</a>, más ejemplos <a href="https://www.overleaf.com/gallery">enlace</a>. En el siguiente <a href="https://youtu.be/d6_RP13Gnm8">video</a> se da una breve reseña de lo que es LaTeX.</p>
+<p>Para la práctica se utiliza la plataforma <a href="https://www.overleaf.com/">Overleaf</a>, en la cual hay que generar una cuenta. Una vez que se tenga la cuenta, descargue el siguiente <a href="https://drive.google.com/file/d/1rwDqIiZi2KVP7liVzNRCqT5uyjY9XvWC/view?usp=sharing">archivo</a>, y revise el siguiente <a href="https://youtu.be/ltZLmvh1APg">video</a> para cargar y comenzar a utilizar la plataforma. La siguiente <a href="https://www.youtube.com/playlist?list=PLSC7gO5dTNPdatFy7PIbmJ5xtxqDyTWbI">lista de reproducción</a> podría revisarse (si así se desea, esta parte es opcional). Para esta práctica será útil el escribir varias lineas de ecuaciones, busque información al respecto, esta <a href="https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath">página</a> es de ayuda.</p>
+<p>Para practicar el uso de LaTeX, desarrollará un documento compuesto por: Portada, Índice (de contenido, de tablas y de gráficas, cuando sea necesario), Objetivos, Introducción, Desarrollo, Conclusiones, Apéndices (de ser necesario), Referencias. Algunos de estos apartados ya están considerados en el formato de practica. El nombre de la práctica, es el que aparece como título de esta sección.</p>
+<p>Los objetivos de esta práctica son los siguientes:</p>
+<p>1. Conocer los componentes principales de LaTeX</p>
+<p>2. Crear un documento que será la guía para tus reportes de prácticas</p>
+<p>3. Perder el miedo a aprender rápido</p>
+<p>4. Motivarte a usar LaTeX</p>
+<p>5. Verificar algunas propiedades de convolución</p>
+<p>En la introducción se describirá que es la convolución y aplicaciones en Telemática.</p>
+<p>Para el desarrollo, de la sección de convolución en tiempo continuo de las <a href="http://rafneta.github.io/Notas/NotasSyS/index.html">notas</a>, tienes que:</p>
+<ul>
+<li><p>Desarrollar la deducción de las fórmulas (11) y (12)</p></li>
+<li><p>Agrega las gráficas (elaboradas en MATLAB) para casos específicos (<span class="math inline">\(a=1/2\)</span>, <span class="math inline">\(\beta=\omega=2\)</span>, <span class="math inline">\(\theta=\pi/4\)</span>, <span class="math inline">\(\lambda=-1\)</span>) de cada una de las ecuaciones que probaste</p></li>
+<li><p>Agrega enlaces para las simulaciones en desmos de los ejemplos propuestos (uno por propiedad)</p></li>
+</ul>
+<p>Como apéndice agrega el código de MATLAB que utilizaste para realizar estas gráficas.</p>
+<p>Para las conclusiones, contesta las siguientes preguntas, en forma de redacción coherente ligando las respuestas. Para la parte de LaTeX:</p>
+<ul>
+<li><p>¿Qué es LaTeX y para que sirve?</p></li>
+<li><p>¿Qué alternativas a parte de Overleaf existen para producir documentos en LaTeX?</p></li>
+</ul>
+<p>Para la parte de convolución:</p>
+<ul>
+<li><p>¿Qué es la convolución de dos señales?</p></li>
+<li><p>Menciona algunas de las aplicaciones que tiene en Telemática</p></li>
+<li><p>¿Cuáles son las ventajas de hacer convolución de dos señales causales, de longitud infinita y que tengan una sola expresión?</p></li>
+</ul>
+<p>En las referencias utiliza un formato estándar, podría ser el siguiente <a href="http://www.cva.itesm.mx/biblioteca/pagina_con_formato_version_oct/apa.htm">enlace</a></p>
+<p>1. <a href="https://correoipn-my.sharepoint.com/:v:/g/personal/ramartinezr_ipn_mx/EYh7YiuRrWVNglwT-bWe_OMBCUPf7LNZncXJyB3bMmIKNQ?e=YbL546">Video de la práctica</a>. Describe el contenido de la práctica.</p>
+<p><strong>Entregable:</strong> Documento en formato pdf con el contenido descrito. Se carga el archivo en classroom (en la sección correspondiente), con la nomenclatura.</p>
+<pre><code>Pnumero_ApellidoPaterno_InicialMaterno_Nombre_Grupo.pdf</code></pre>
+si hay dudas al respecto puede preguntar en clase.
+</div>
+<h1 id="p04-convolución-y-correlación">P04: Convolución y correlación</h1>
+<div id="justificar">
+<p>Se muestran los enlaces a dos archivo</p>
+<p>1. <a href="../SyS20211/Practicas_SyS_2021_1/P04_SyS_2021_1/P04_SyS_2021_1.html">Documento de la práctica</a>. Documento en formato HTML, que contiene la descripción de la práctica</p>
+<p>2. <a href="https://correoipn-my.sharepoint.com/:v:/g/personal/ramartinezr_ipn_mx/EeEAsC2J0_RIrn4fZDjSIjgBkMR0RQhQo6OvjF8-F8kxYg?e=pX6cqN">Video de la práctica</a>. Describe el contenido de la práctica.</p>
+<p><strong>Entrega:</strong> Se genera una página web con MATLAB (publish) esta página web se carga al repositorio adecuado de GitHub. Se carga en classroom el enlace de la página (en la sección correspondiente), con la nomenclatura.</p>
+<pre><code>http://usuario.github.io/.../SySPrac#NombreApellido.html</code></pre>
+si hay dudas al respecto puede preguntar en clase.
+</div>
+<h1 id="p05-series-de-fourier-en-tiempo-continuo">P05: Series de Fourier en tiempo continuo</h1>
+<div id="justificar">
+<p>Se muestran los enlaces a dos archivo</p>
+<p>1. <a href="../SyS20211/Practicas_SyS_2021_1/P05_SyS_2021_1/P05_SyS_2021_1.html">Documento de la práctica</a>. Documento en formato HTML, que contiene la descripción de la práctica</p>
+<p>2. <a href="https://correoipn-my.sharepoint.com/:v:/g/personal/ramartinezr_ipn_mx/EXLU-TJsGQNMuL5UCwqb1MwBDspSXqIXAnOMyykI03ya2w?e=dfHrBi">Video de la práctica</a>. Describe el contenido de la práctica.</p>
+<p><strong>Entrega:</strong> Se genera una página web con MATLAB (publish) esta página web se carga al repositorio adecuado de GitHub. Se carga en classroom el enlace de la página (en la sección correspondiente), con la nomenclatura.</p>
+<pre><code>http://usuario.github.io/.../SySPrac#NombreApellido.html</code></pre>
+Si hay dudas al respecto puede preguntar en clase.
+</div>
+<h1 id="p06-sistemas-diferenciales">P06: Sistemas diferenciales</h1>
+<div id="justificar">
+<p>Se muestran los enlaces a dos archivo</p>
+<ol type="1">
+<li><p><a href="https://rafneta.github.io/PracticasSyS/20201/P06SyS20201/P06SyS20201.html">Documento de la práctica</a>. Documento en formato HTML, que contiene la descripción de la práctica</p></li>
+<li><p><a href="https://correoipn-my.sharepoint.com/:v:/g/personal/ramartinezr_ipn_mx/ESi5BLuB3wtDrLlR0VbxyY0BULtLqFvowgM-HeAn_d4SbA?e=LTvtGw">Video de la práctica</a>. Describe el contenido de la práctica.</p></li>
+</ol>
+<p><strong>Entrega:</strong> Se genera una página web con MATLAB (publish) esta página web se carga al repositorio adecuado de GitHub. Se carga en classroom el enlace de la página (en la sección correspondiente), con la nomenclatura.</p>
+<pre><code> http://usuario.github.io/.../SySPrac#NombreApellido.html</code></pre>
+<p>La práctica se prueba con el siguiente problema:</p>
+<p><span class="math display">\[\ddot{y}(t) + 3\dot{y}(t)+3y(t) = -\dot{x}(t)+x(t)\]</span></p>
+<p>donde <span class="math inline">\(x(t)=cos(2t)u(t)\)</span>, <span class="math inline">\(y(0^-)=1\)</span>, <span class="math inline">\(\dot{y}(0^-)=1\)</span>.</p>
+<p>Si hay dudas al respecto puede preguntar en clase.</p>
+</div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2182,6 +2266,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
