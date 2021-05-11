@@ -63,4 +63,6 @@ d-article a:link {
  color: rgba(108,29,69,0.5);
 }
 
-
+d-article  li a:link {
+ color: rgba(108,29,69,0.5);
+}
