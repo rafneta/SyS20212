@@ -59,10 +59,16 @@ tbody tr:nth-child(even) {
   background-color: rgb(255,255,255);
 }
 
+
+
 d-article a:link {
  color: rgba(108,29,69,0.5);
 }
 
 d-article  li a:link {
+ color: rgba(108,29,69,0.5);
+}
+
+d-article-with-toc a:link {
  color: rgba(108,29,69,0.5);
 }
